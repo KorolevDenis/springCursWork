@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/table_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints">
+
+    <TextView
+        android:id="@+id/name_table_tow"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/priopity_table_tow"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:autoSizeTextType="none"
+        />
+
+    <TextView
+        android:id="@+id/count_sale_table_tow"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/date_sale_table_tow"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:autoSizeTextType="none"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/count_WR1_table_tow"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/count_WR2_table_tow"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20dp"/>
+</TableRow>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/form_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="good"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="sale"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="WR1"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/WR1_count" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="WR2"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="name"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="priority"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="count"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="date"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="count"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="count"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/priopity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/sale_count"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/sale_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <EditText
+                android:id="@+id/WR1_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/WR2_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/add_change_good"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="fill_horizontal"
+        android:text="add/changeGood"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/form_table" />
+
+    <TableLayout
+        android:id="@+id/buttonTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/add_change_good">
+
+        <TableRow android:layout_marginTop="2dp">
+
+            <Button
+                android:id="@+id/add_sale"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="addSale"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/add_WR1"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="addWR1"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/add_WR2"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="addWR2"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="2dp">
+
+            <Button
+                android:id="@+id/change_sale"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="changeSale"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/change_WR1"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="changeWR1"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/change_WR2"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="changeWR2"
+                android:textSize="16sp" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="2dp">
+
+            <Button
+                android:id="@+id/delete_sale"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="deleteSale"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/delete_WR1"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="deleteWR1"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/delete_WR2"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="deleteWR2"
+                android:textSize="16sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/view_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTable"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/saveGood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="saveGood"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/deleteGood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="deleteGood"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/saveGood"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
