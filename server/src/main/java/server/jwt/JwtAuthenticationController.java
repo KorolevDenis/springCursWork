@@ -15,7 +15,6 @@ import server.service.UserService;
 import javax.naming.AuthenticationException;
 
 @RestController
-@CrossOrigin
 public class JwtAuthenticationController {
     @Autowired
     private JwtTokenUtil jwtTokenUtil;
@@ -29,7 +28,7 @@ public class JwtAuthenticationController {
     PasswordEncoder passwordEncoder;
 
     @RequestMapping(value = "/authenticate", method = {RequestMethod.POST, RequestMethod.GET})
-    public ResponseEntity<JwtResponse> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest) throws Exception {
+    public ResponseEntity<JwtResponse> createAuthenticationToken(@RequestBody User authenticationRequest) throws Exception {
         try {
             authenticate(authenticationRequest.getUsername(), authenticationRequest.getPassword());
             final UserDetails userDetails = userDetailsService

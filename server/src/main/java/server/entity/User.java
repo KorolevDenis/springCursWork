@@ -22,10 +22,6 @@ public class User implements UserDetails {
   private String password;
 
   @ManyToMany(mappedBy = "users",fetch = FetchType.EAGER)
-//  @JoinTable(
-//          name = "usr_roles",
-//          joinColumns = @JoinColumn(name = "users_id"),
-//          inverseJoinColumns = @JoinColumn(name = "roles_id"))
   private Set<Role> roles;
 
   public void setId(Long id) {

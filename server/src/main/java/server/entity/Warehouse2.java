@@ -14,9 +14,6 @@ public class Warehouse2 {
     @NotNull(message = "Please provide good count of WR2")
     private Integer goodCount;
 
-//    @ManyToOne(fetch = FetchType.EAGER)
-//    private Good good;
-
     public Warehouse2() {
     }
 
@@ -36,15 +33,7 @@ public class Warehouse2 {
         this.goodCount = goodCount;
     }
 
-//    public void setGood(Good good) {
-//        this.good = good;
-//    }
-
     public Integer getGoodCount() {
         return goodCount;
     }
-
-//    public Good getGood() {
-//        return good;
-//    }
 }

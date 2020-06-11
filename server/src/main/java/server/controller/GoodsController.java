@@ -31,19 +31,6 @@ public class GoodsController {
 
     @PostMapping(value = "/addGood")
     public @ResponseBody Good addGood(@Valid @RequestBody Good good) {
-//        Optional<Good> idGood =  goodsRepository.findById(good.getId());
-//        if (idGood.isPresent()) {
-//            List<Sale> inputSales = good.getSales();
-//            List<Warehouse1> inputWR1 = good.getWarehouse1Goods();
-//            List<Warehouse2> inputWR2 = good.getWarehouse2Goods();
-//
-//            List<Sale> sales = good.getSales();
-//            List<Warehouse1> inputWR1 = good.getWarehouse1Goods();
-//            List<Warehouse2> inputWR2 = good.getWarehouse2Goods();
-//
-//        }
-//
-//        List<Sale> inputSales = goodsRepository.findById(good.getId());
         Good save = goodsRepository.save(good);
 
         return save;

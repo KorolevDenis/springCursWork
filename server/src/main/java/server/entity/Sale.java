@@ -17,9 +17,6 @@ public class Sale {
     @NotNull(message = "Please provide creation date of sale")
     private String createDate;
 
-//    @ManyToOne(fetch = FetchType.EAGER)
-//    private Good good;
-
     public Sale() {
     }
 

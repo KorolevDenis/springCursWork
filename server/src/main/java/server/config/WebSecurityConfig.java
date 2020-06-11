@@ -60,21 +60,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .disable()
                 .authorizeRequests()
                 .antMatchers("/register", "/authenticate", "/home").permitAll()
-                //Доступ только для пользователей с ролью Администратор
-                .antMatchers("/admin").hasRole("ADMIN")
-                //Все остальные страницы требуют аутентификации
                 .anyRequest().authenticated()
                 .and().
         exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and().sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-
-//        http
-//                .formLogin()
-//                .loginPage("/authenticate")
-//                .permitAll()
-//                .and()
-//                .logout()
-//                .permitAll();
 
         http.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
     }
